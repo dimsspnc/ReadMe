@@ -1,199 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimas Ponco Prabowo - Portfolio</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --text: #4b5563;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light);
-        }
-
-        header {
-            background-color: white;
-            padding: 1rem 5%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--dark);
-            text-decoration: none;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        nav a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 5%;
-            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-            margin-top: 60px;
-        }
-        .hero-content h1 {
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background-color: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-
-        .section {
-            padding: 5rem 5%;
-            background-color: white;
-            text-align: center;
-        }
-        .section h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 2rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .card {
-            background-color: var(--light);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            background-color: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 2rem 5%;
-        }
-
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2rem; }
-            nav ul { display: none; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kenali Dimas Ponco Prabowo, mahasiswa dengan minat pada hardware, digital marketing, dan information retrieval. Mari bertukar ide dan berkolaborasi.">
+  <meta name="theme-color" content="#eeeae1">
+  <title>Dimas Ponco Prabowo — Teknologi & Ide Kreatif</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+    :root{--paper:#eeeae1;--ink:#252d27;--muted:#596158;--line:#caccc0;--accent:#d4e58b;--green:#344d3d;--white:#faf9f5;--display:'Manrope',sans-serif;--body:'DM Sans',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 var(--body)}a{color:inherit}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:6px}::selection{background:var(--accent)}.wrap{width:min(1180px,88%);margin:auto}.skip{position:fixed;top:12px;left:12px;transform:translateY(-180%);padding:10px 20px;background:var(--white);z-index:5}.skip:focus{transform:translateY(0)}header{position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:3}.nav{min-height:86px;display:flex;justify-content:space-between;align-items:center;gap:24px}.brand{font:800 23px var(--display);text-decoration:none;letter-spacing:-1px}.brand span{color:var(--green)}nav{display:flex;align-items:center;gap:30px}nav a{font-size:14px;text-decoration:none}nav a:hover,nav a[aria-current]{text-decoration:underline;text-underline-offset:6px}.nav-contact{border:1px solid var(--ink);border-radius:30px;padding:9px 20px}.menu{display:none;border:1px solid var(--line);background:transparent;padding:8px 14px;border-radius:5px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.hero{padding:78px 0 72px;display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:60px}.hero h1{font:500 clamp(44px,5.8vw,78px)/1.09 var(--display);letter-spacing:-3.5px;margin:22px 0 26px}.hero h1 em{font:italic 1.08em Georgia,serif;color:var(--green)}.intro{color:var(--muted);max-width:485px}.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:32px}.button{display:inline-flex;align-items:center;justify-content:center;gap:26px;border:1px solid var(--ink);padding:13px 22px;border-radius:3px;background:var(--ink);color:var(--white);text-decoration:none;font-size:14px;transition:transform .2s,background .2s}.button:hover{background:var(--green);transform:translateY(-3px)}.text-link{font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}.text-link:hover{color:var(--green)}.hero-note{font-size:12px;color:var(--muted);margin-top:32px}.art{aspect-ratio:1/1.12;background:var(--green);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:30px;color:var(--paper);border-radius:140px 140px 4px 4px}.art-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;margin-top:20px}.orbit{width:270px;height:270px;position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);border:1px solid #a4b49a;border-radius:50%}.orbit:before,.orbit:after{content:'';position:absolute;inset:30px -30px;border:1px solid #a4b49a;border-radius:50%;transform:rotate(55deg)}.orbit:after{transform:rotate(-55deg)}.asterisk{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font:250px/.8 Georgia,serif;color:var(--accent)}.art-bottom{display:flex;justify-content:space-between;align-items:end;position:relative;font-size:12px}.art-bottom strong{font:500 38px/1 var(--display);letter-spacing:-2px}.ribbon{border-block:1px solid var(--line);padding:18px 0}.ribbon .wrap{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.ribbon span:not(:last-child):after{content:' /';color:#829079;margin-left:20px}.section{padding:95px 0}.about{display:grid;grid-template-columns:1fr 2fr;gap:80px}.label{font-size:12px;letter-spacing:1px;text-transform:uppercase;margin:8px 0;color:var(--muted)}h2{font:500 clamp(30px,3.5vw,46px)/1.2 var(--display);letter-spacing:-1.6px;margin:0 0 25px}p{margin:0 0 18px}.about p{color:var(--muted)}.about .lead{font-size:21px;color:var(--ink)}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}.tags span{border:1px solid var(--line);padding:5px 12px;border-radius:30px;font-size:12px}.focus{background:var(--white);border-block:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}.section-head h2{margin-bottom:0}.section-head p{max-width:330px;font-size:14px;color:var(--muted);margin:0}.focus-row{display:grid;grid-template-columns:60px 1fr 1fr;gap:25px;padding:30px 0;border-top:1px solid var(--line)}.number{font-size:12px;color:var(--muted);padding-top:5px}h3{font:600 24px/1.3 var(--display);letter-spacing:-.7px;margin:0 0 8px}.focus-row small{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.focus-row p{font-size:15px;color:var(--muted);margin:0}.contact{margin:75px auto;background:var(--accent);padding:55px;display:grid;grid-template-columns:1.25fr 1fr;gap:50px}.contact h2{max-width:480px;margin:15px 0}.contact p{font-size:15px;max-width:440px}.contact-links{display:flex;flex-direction:column;justify-content:center;gap:16px;align-items:start}.email{font-size:14px;overflow-wrap:anywhere}.copy{border:0;background:transparent;text-decoration:underline;text-underline-offset:4px;font-size:12px;cursor:pointer;padding:4px 0}.status{min-height:1.5em;font-size:12px;margin:0}footer{border-top:1px solid var(--line);padding:24px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}footer p{margin:0}.hero-content{animation:enter .7s ease both}.art{animation:enter .9s ease both}@keyframes enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(min-width:1500px){.hero{padding-block:100px}}@media(max-width:800px){.hero{gap:30px;padding-top:50px}.hero h1{letter-spacing:-2px}.art{padding:23px;min-height:330px}.orbit{width:190px;height:190px}.asterisk{font-size:190px}.art-bottom strong{font-size:28px}.about{gap:30px;grid-template-columns:1fr 2fr}.contact{padding:35px;gap:30px}.focus-row{grid-template-columns:35px 1fr 1fr;gap:18px}nav{gap:18px}}
+    @media(max-width:600px){.wrap{width:88%}.nav{min-height:72px}.menu{display:block}nav{position:absolute;top:72px;left:0;right:0;background:var(--paper);padding:20px 6% 25px;display:none;align-items:stretch;gap:18px;border-bottom:1px solid var(--line)}nav.open{display:flex;flex-direction:column}.nav-contact{text-align:center}.hero{grid-template-columns:1fr;gap:35px;padding:42px 0}.hero h1{font-size:48px}.intro{font-size:16px}.hero-note{margin-top:22px}.art{aspect-ratio:1.25;min-height:310px;border-radius:120px 120px 3px 3px}.art-top{margin-top:5px}.ribbon .wrap{flex-wrap:wrap;justify-content:center;font-size:9px}.ribbon span:not(:last-child):after{margin-left:10px}.section{padding:58px 0}.about{grid-template-columns:1fr;gap:20px}.about .lead{font-size:19px}.section-head{display:block}.section-head p{margin-top:20px}.focus-row{grid-template-columns:25px 1fr;gap:15px}.focus-row p{grid-column:2}.contact{margin:45px auto;padding:28px;grid-template-columns:1fr;gap:18px}.footer-inner{flex-direction:column;gap:12px}h3{font-size:22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+    .contact-form{min-width:0;display:grid;gap:15px}.contact-form label{display:grid;gap:6px;font-size:13px;font-weight:600}.contact-form input,.contact-form textarea{width:100%;min-width:0;border:1px solid #7a8861;border-radius:4px;background:var(--white);color:var(--ink);padding:12px 14px;font:15px/1.5 var(--body)}.contact-form textarea{resize:vertical;min-height:130px}.contact-form input:focus-visible,.contact-form textarea:focus-visible{outline:2px solid var(--green);outline-offset:3px}.contact-form .button{cursor:pointer;justify-self:start}.contact-form .form-help{font-size:12px;margin:0}.contact-form .form-status{font-size:13px;margin:0;min-height:1.5em}.contact-links{margin-top:26px}.contact>div{min-width:0}
+  </style>
 </head>
 <body>
-
-    <header>
-        <a href="#" class="logo">DiMZzz Pnc</a>
-        <nav>
-            <ul>
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-                <li><a href="mailto:dimasponcoprabowod@gmail.com">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="beranda" class="hero">
-        <div class="hero-content">
-            <h1>Halo, Saya Dimas Ponco Prabowo</h1>
-            <p>Selamat datang di halaman personal saya. Saya antusias dengan pengembangan teknologi, konten digital, dan strategi penyampaian informasi yang efektif.</p>
-            <a href="https://wa.me/6285772105619" class="btn" target="_blank" rel="noopener noreferrer">Hubungi Saya</a>
-        </div>
+  <a class="skip" href="#utama">Lewati ke konten</a>
+  <header><div class="wrap nav">
+    <a href="#beranda" class="brand" aria-label="DiMZzz Pnc, beranda">DiMZzz<span> Pnc.</span></a>
+    <button type="button" class="menu" aria-controls="navigation" aria-expanded="false">Menu +</button>
+    <nav id="navigation" aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#fokus">Fokus & keahlian</a><a href="#kontak" class="nav-contact">Mari terhubung ↗</a></nav>
+  </div></header>
+  <main id="utama">
+    <section id="beranda" class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-content"><div class="eyebrow">Portfolio / Dimas Ponco Prabowo</div><h1 id="hero-title">Halo, selamat<br>datang di<br><em>ruang saya.</em></h1><p class="intro">Halo, saya Dimas. Seorang mahasiswa yang senang mengeksplorasi teknologi, memahami informasi, dan mengolah ide menjadi konten kreatif.</p><div class="actions"><a class="button" href="#fokus">Jelajahi fokus saya <span aria-hidden="true">↘</span></a><a class="text-link" href="#kontak">Mulai percakapan ↗</a></div><p class="hero-note">Hardware & sistem · Digital marketing · Information retrieval</p></div>
+      <div class="art" aria-hidden="true"><div class="art-top"><span>TERUS BELAJAR</span><span>TERUS MENCOBA</span></div><div class="orbit"></div><span class="asterisk">✳</span><div class="art-bottom"><strong>Explore.<br>Connect. Create.</strong><span>Catatan sebuah<br>rasa ingin tahu ↗</span></div></div>
     </section>
-
-    <section id="tentang" class="section">
-        <h2>Tentang Saya</h2>
-        <p style="max-width: 800px; margin: 0 auto;">Saya adalah mahasiswa dengan minat yang luas, mulai dari spesifikasi perangkat keras komputer, pengembangan strategi pemasaran digital, hingga pembuatan konten kreatif. Saya selalu bersemangat untuk belajar dan mengeksplorasi hal-hal baru di dunia teknologi dan informasi.</p>
+    <div class="ribbon" aria-hidden="true"><div class="wrap"><span>Teknologi & informasi</span><span>Pemikiran kreatif</span><span>Belajar lewat eksplorasi</span></div></div>
+    <section id="tentang" class="section wrap about" aria-labelledby="about-title"><div class="label">01 / Tentang saya</div><div><h2 id="about-title">Memahami cara kerja.<br>Menemukan kemungkinan.</h2><p class="lead">Saya Dimas Ponco Prabowo, mahasiswa dengan minat yang mempertemukan teknologi, komunikasi, dan kreativitas.</p><p>Dari spesifikasi perangkat keras komputer sampai strategi pemasaran digital, saya tertarik memahami bagaimana setiap bagian bekerja dan saling terhubung. Ketertarikan ini juga membawa saya mengeksplorasi pengolahan informasi dan pembuatan konten.</p><p>Bagi saya, belajar dimulai dengan pertanyaan, dilanjutkan dengan eksplorasi, lalu dibagikan menjadi sesuatu yang mudah dipahami.</p><div class="tags" aria-label="Minat"><span>Teknologi</span><span>Konten digital</span><span>Strategi komunikasi</span><span>Pengolahan informasi</span></div></div></section>
+    <section id="fokus" class="section focus" aria-labelledby="focus-title"><div class="wrap"><div class="section-head"><div><div class="label">02 / Fokus & keahlian</div><h2 id="focus-title">Tiga bidang. Satu rasa ingin tahu.</h2></div><p>Bidang yang saya pelajari dan eksplorasi dalam perjalanan memahami dunia digital.</p></div><article class="focus-row"><span class="number">01</span><div><h3>Hardware & Sistem</h3><small>Memahami fondasi teknologi</small></div><p>Eksplorasi spesifikasi komponen komputer serta hubungan perangkat keras dan perangkat lunak untuk memahami cara kerja sebuah sistem.</p></article><article class="focus-row"><span class="number">02</span><div><h3>Digital Marketing</h3><small>Menghubungkan ide & audiens</small></div><p>Mempelajari strategi pemasaran digital, pembuatan konten, dan pendekatan komunikasi untuk menyampaikan informasi secara lebih relevan.</p></article><article class="focus-row"><span class="number">03</span><div><h3>Information Retrieval</h3><small>Menemukan informasi yang relevan</small></div><p>Mendalami analisis kemiripan dokumen dan pembobotan frekuensi untuk memahami bagaimana sistem temu kembali informasi bekerja.</p></article></div></section>
+    <section id="kontak" class="wrap contact" aria-labelledby="contact-title"><div><div class="eyebrow">03 / Mari terhubung</div><h2 id="contact-title">Punya ide untuk<br>dibicarakan?</h2><p>Untuk bertukar ide, berdiskusi tentang teknologi, atau membicarakan kemungkinan kolaborasi, silakan hubungi saya.</p><div class="contact-links"><a class="button" href="https://wa.me/6285772105619" target="_blank" rel="noopener noreferrer" aria-label="Sapa lewat WhatsApp (dibuka di tab baru)">Sapa lewat WhatsApp <span aria-hidden="true">↗</span></a><a class="email" href="mailto:dimasponcoprabowod@gmail.com">dimasponcoprabowod@gmail.com</a><button class="copy" type="button">Salin alamat email</button><p class="status" role="status" aria-live="polite"></p></div></div>
+      <form id="email-form" class="contact-form" action="mailto:dimasponcoprabowod@gmail.com" method="get" aria-label="Tulis email untuk Dimas" aria-describedby="email-help">
+        <label for="sender-name">Nama<input id="sender-name" name="name" autocomplete="name" placeholder="Nama Anda" required maxlength="100"></label>
+        <label for="sender-email">Email<input id="sender-email" name="email" type="email" autocomplete="email" placeholder="nama@contoh.com" required maxlength="254"></label>
+        <label for="email-subject">Subjek<input id="email-subject" name="subject" placeholder="Apa yang ingin dibicarakan?" required maxlength="150"></label>
+        <label for="email-message">Pesan<textarea id="email-message" name="body" placeholder="Ceritakan ide atau pertanyaan Anda…" required maxlength="3000" rows="5"></textarea></label>
+        <p id="email-help" class="form-help">Tombol ini membuka aplikasi email Anda. Tinjau pesan, lalu kirim dari aplikasi tersebut.</p>
+        <button class="button" type="submit">Lanjut ke email <span aria-hidden="true">↗</span></button>
+        <p id="email-status" class="form-status" role="status" aria-live="polite"></p>
+        <noscript><p class="form-help">Untuk menyertakan semua kolom secara otomatis, aktifkan JavaScript atau kirim langsung ke <a href="mailto:dimasponcoprabowod@gmail.com">email Dimas</a>.</p></noscript>
+      </form>
     </section>
-
-    <section id="proyek" class="section" style="background-color: var(--light);">
-        <h2>Fokus & Proyek</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Hardware & Sistem</h3>
-                <p>Eksplorasi dan analisis spesifikasi komponen komputer, termasuk pemahaman mendalam tentang Hardware maupun Software.</p>
-            </div>
-            <div class="card">
-                <h3>Digital Marketing</h3>
-                <p>Perancangan strategi pemasaran digital dan model komunikasi untuk meningkatkan visibilitas dan jangkauan audiens.</p>
-            </div>
-            <div class="card">
-                <h3>Information Retrieval</h3>
-                <p>Analisis kemiripan dokumen dan pembobotan frekuensi untuk mengoptimalkan sistem temu kembali informasi.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="kontak">
-        <p>&copy; 2026 Dimas Ponco Prabowo. Dibuat untuk GitHub Pages.</p>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+  </main>
+  <footer><div class="wrap footer-inner"><p>© <span id="year">2026</span> Dimas Ponco Prabowo.</p><a class="text-link" href="#beranda">Kembali ke atas ↑</a></div></footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const navigation = document.querySelector('#navigation');
+    function closeMenu() { navigation.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); menu.textContent = 'Menu +'; }
+    menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; navigation.classList.toggle('open', open); menu.setAttribute('aria-expanded', String(open)); menu.textContent = open ? 'Tutup −' : 'Menu +'; });
+    navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); } });
+    document.addEventListener('click', event => { if (!event.target.closest('header')) closeMenu(); });
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    const emailForm = document.querySelector('#email-form');
+    emailForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const fields = new FormData(emailForm);
+      const name = fields.get('name').trim();
+      const email = fields.get('email').trim();
+      const subject = fields.get('subject').trim();
+      const message = fields.get('body').trim();
+      const status = document.querySelector('#email-status');
+      if (!name || !email || !subject || !message) {
+        status.textContent = 'Lengkapi semua kolom dengan teks sebelum melanjutkan.';
+        return;
+      }
+      const body = `Nama: ${name}\r\nEmail: ${email}\r\n\r\n${message}`;
+      window.location.href = `mailto:dimasponcoprabowod@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      status.textContent = 'Draf email siap dibuka. Jika aplikasi email tidak terbuka, salin pesan Anda dan gunakan alamat email di samping.';
+    });
+    const copyButton = document.querySelector('.copy');
+    if (!navigator.clipboard || !window.isSecureContext) { copyButton.hidden = true; }
+    copyButton.addEventListener('click', async () => { const status = document.querySelector('.status'); try { await navigator.clipboard.writeText('dimasponcoprabowod@gmail.com'); status.textContent = 'Alamat email berhasil disalin.'; } catch { status.textContent = 'Belum bisa menyalin. Pilih dan salin alamat email di atas.'; } });
+  </script>
 </body>
 </html>
